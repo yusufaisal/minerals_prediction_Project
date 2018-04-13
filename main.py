@@ -3,17 +3,17 @@ from class_GA import GeneticAlgorithm
 from class_JST import JST
 
 #### GA Setting ####
-GAsettings = {}
-GAsettings["Populations"] = 8
-GAsettings["Generations"] = 12
-GAsettings["Max Number"] = 99
-GAsettings["Kromosom"] = 12
-GAsettings["Crossover"] = True
-GAsettings["Mutation"] = True
-GAsettings["Crossover Probability"] = 0.6
-GAsettings["Mutation Probability"] = 0.8
-GAsettings["Replacement Strategy"] = "Steadystate"  # steadystate or elitism
-
+GAsettings = {
+    "Populations"   : 8,
+    "Generations"   : 12,
+    "Max Number"    : 99,
+    "Kromosom"      : 12,
+    "Crossover"     : True,
+    "Mutation"      : True,
+    "Crossover Probability" : 0.6,
+    "Mutation Probability"  : 0.8
+    # "Replacement Strategy"  : "Steadystate"  # steadystate or elitism
+}
 #### JST Setting ####
 JSTSettings = {
     "Dataset Path"      : "Dataset/oil-consumption-tonnes.csv",
@@ -21,7 +21,7 @@ JSTSettings = {
     "Load Model"        : False,
     "Save Model"        : True,
     "Learning Verbose"  : True,
-    "Predict By"        : 5, # 5 or 3(default)
+    "Predict By"        : 5,  #5 or 3(default)
     "Show Plot"         : True
 }
 
