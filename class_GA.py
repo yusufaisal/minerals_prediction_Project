@@ -76,9 +76,9 @@ class GeneticAlgorithm(object):
                 child1 = populations[parent1][:]
                 child2 = populations[parent2][:]
 
-                #Crossover
                 self.__crossover(child1,child2,random.uniform(0,1))
                 self.__mutation(child1, child2,)
+
                 child.append(child1)
                 child.append(child2)
 
