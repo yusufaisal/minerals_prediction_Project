@@ -1,5 +1,7 @@
 from __future__ import division
 import random
+import numpy as np
+
 
 class GeneticAlgorithm(object):
     __settings = {}
@@ -12,59 +14,53 @@ class GeneticAlgorithm(object):
         if self.__settings["Mutation"]:
             for _ in range(2):
                 rand = random.uniform(0, 1)
-                titik = int(round(random.uniform(0, self.__settings["Kromosom"] - 1)))
+                x = random.randint(0,1)
+                y = random.randint(0, 1)
+                z = random.randint(0, 1)
                 if rand >= self.__settings["Mutation Probability"]:
-                    if c1[titik] == 0:
-                        c1[titik] = 1
+                    if c1[x][y][z] == 0:
+                        c1[x][y][z] = 1
                     else:
-                        c1[titik] = 0
+                        c1[x][y][z] = 0
 
                 rand = random.uniform(0, 1)
-                titik = int(round(random.uniform(0, self.__settings["Kromosom"] - 1)))
+                x = random.randint(0, 1)
+                y = random.randint(0, 1)
+                z = random.randint(0, 1)
                 if rand >= self.__settings["Mutation Probability"]:
-                    if c2[titik] == 0:
-                        c2[titik] = 1
+                    if c2[x][y][z] == 0:
+                        c2[x][y][z] = 1
                     else:
-                        c2[titik] = 0
+                        c2[x][y][z]= 0
 
-    def __populations(self,nKrom,nPop):
-        pop=[]
+    def __populations(self,nPop):
+        pop = []
+        dim  = 2
         for j in range(nPop):
-            x = [int(round(random.randint(0, 1))) for i in range(nKrom)]
-            while self.__check(x,nKrom):
-                x=[int(round(random.randint(0, 1))) for i in range(nKrom)]
-            pop.append(x)
+            fk_oil = [random.randint(0,self.__settings["Max Number"]) for i in range(2)]
+            fk_gas = [random.randint(0,self.__settings["Max Number"]) for i in range(2)]
+            fk_coal = [random.randint(0,self.__settings["Max Number"]) for i in range(2)]
+            fk_out = [random.randint(0,self.__settings["Max Number"]) for i in range(2)]
+            rule = [[[random.randint(0,1) for k in range(dim)] for j in range(dim)] for i in range(dim)]
 
+            pop.append([sorted(fk_oil),sorted(fk_gas),sorted(fk_coal),sorted(fk_out),rule])
         return pop
-
-    def __check(self,arr,nKrom):
-        sum =0
-        for i in range(int(nKrom/2)):
-            sum += arr[i] * pow(2, i)
-        if sum >= self.__settings["Max Number"]:
-            return True
-
-        for j in range(i,nKrom):
-            sum += arr[j] * pow(2, i)
-        if sum >= self.__settings["Max Number"]:
-            return True
-
-        return False
 
     def __crossover(self,c1,c2,rand):
         if self.__settings["Crossover"]:
             if rand >= self.__settings["Crossover Probability"]:
-                titik = int(round(random.uniform(0, self.__settings["Kromosom"] - 1)))
-                for k in range(titik):
-                    c1[k], c2[k] = c2[k], c1[k]
+                titik = random.randint(0,3)
+                c1[titik],c2[titik] = c2[titik],c1[titik]
+
+                c1[4][0], c2[4][0] = c2[4][0], c1[4][0]
 
     def __fitness(self,arr):
 
         return None
 
     def run(self):
-        populations = self.__populations(self.__settings["Kromosom"],self.__settings["Populations"])
-        # print (populations)
+        populations = self.__populations(self.__settings["Populations"])
+        print(populations)
         for _ in range(self.__settings["Generations"]):
             child = []
             fitness = []
@@ -77,7 +73,7 @@ class GeneticAlgorithm(object):
                 child2 = populations[parent2][:]
 
                 self.__crossover(child1,child2,random.uniform(0,1))
-                self.__mutation(child1, child2,)
+                self.__mutation(child1, child2)
 
                 child.append(child1)
                 child.append(child2)

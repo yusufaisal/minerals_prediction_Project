@@ -33,6 +33,14 @@ class JST:
             self.__y.append(float(data[i + 5, 1]))
             i += 1
 
+    def __predictBy7(self,data):
+        i = 0
+        while i < (len(data) - 7):
+            self.__x.append([float(data[i, 1]), float(data[i + 1, 1]), float(data[i + 2, 1]), float(data[i + 3, 1]),
+                      float(data[i + 4, 1]),float(data[i + 5, 1]),float(data[i + 6, 1])])
+            self.__y.append(float(data[i + 7, 1]))
+            i += 1
+
     def __train(self):
         if self.__settings["Load Model"]:
             clf = self.__loadModel()
@@ -41,7 +49,7 @@ class JST:
                                verbose=self.__settings["Learning Verbose"],
                                batch_size="auto", max_iter=100, learning_rate='adaptive', learning_rate_init=0.0000001,
                                warm_start=True)
-            for _ in range(20):
+            for _ in range(40):
                 clf.fit(self.__x, self.__y)
             print("Model Train............Done!")
         return clf
@@ -50,10 +58,7 @@ class JST:
         if self.__settings["Show Plot"]:
             plt.title(self.__settings["Dataset Path"])
             plt.plot(x_train, y_train, label="Actual Movement")
-            if self.__settings["Predict By"] == 5:
-                plt.plot(x_train[self.__settings["Predict By"]:], y_predict, label="Prediction Movement")
-            else:
-                plt.plot(x_train[3:], y_predict, label="Prediction Data")
+            plt.plot(x_train[self.__settings["Predict By"]:], y_predict, label="Prediction Movement")
             plt.legend()
             plt.show()
 
@@ -65,6 +70,20 @@ class JST:
         clf = pickle.load(open(self.__settings["Model Filename"],'rb'))
         return clf
 
+    def positif(self,x):
+        if x <0:
+            return x*-1
+        else : return x
+
+    def __MAPE(self,y_train,y_predict):
+        sum = 0
+        for i in range(len(y_predict)):
+            x = y_train[i+self.__settings["Predict By"]] - y_predict[i]
+            sum += (self.positif(x))/y_train[i]
+
+        result = sum/len(y_predict)*100
+        return result
+
     def run(self):
         self.__data = self.__loadDataset()
         x_train = self.__data[:, 0]
@@ -73,12 +92,17 @@ class JST:
         # preProcessing
         if self.__settings["Predict By"]==5:
             self.__predictBy5(self.__data)
+        elif self.__settings["Predict By"]==7:
+            self.__predictBy7(self.__data)
         else:
             self.__predictBy3(self.__data)
 
         clf = self.__train()
+        print("Loss :",clf.loss_)
 
         y_predict = np.array(clf.predict(self.__x))
+
+        print("MAPE :",self.__MAPE(y_train,y_predict))
 
         self.__saveModel(clf)
         self.__showPlot(x_train,y_train,y_predict)
