@@ -79,7 +79,7 @@ class JST:
         sum = 0
         for i in range(len(y_predict)):
             x = y_train[i+self.__settings["Predict By"]] - y_predict[i]
-            sum += (self.positif(x))/y_train[i]
+            sum += (self.positif(x))/y_train[i+self.__settings["Predict By"]]
 
         result = sum/len(y_predict)*100
         return result

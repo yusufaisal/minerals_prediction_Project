@@ -17,17 +17,16 @@ GAsettings = {
 
 #### JST Setting ####
 JSTSettings = {
-    "Dataset Path"      : "Dataset/oil-consumption-tonnes.csv",
-    "Model Filename"    : "JST Model/oil_consumption_model_By5.sav",
-    "Load Model"        : True,
+    "Dataset Path"      : "Dataset/coal-consumption-mtoe.csv",
+    "Model Filename"    : "JST Model/coal_consumption_model_By7.sav",
+    "Load Model"        : False,
     "Save Model"        : False,
     "Learning Verbose"  : True,
-    "Predict By"        : 5,  #5 or 3(default)
+    "Predict By"        : 7,  #7, 5, or 3(default)
     "Show Plot"         : True
 }
 
 if __name__=="__main__":
-
     jst = JST(**JSTSettings)
     jst.run()
 

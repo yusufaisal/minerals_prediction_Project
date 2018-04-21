@@ -37,11 +37,11 @@ class GeneticAlgorithm(object):
         pop = []
         dim  = 2
         for j in range(nPop):
-            fk_oil = [random.randint(0,self.__settings["Max Number"]) for i in range(2)]
-            fk_gas = [random.randint(0,self.__settings["Max Number"]) for i in range(2)]
-            fk_coal = [random.randint(0,self.__settings["Max Number"]) for i in range(2)]
-            fk_out = [random.randint(0,self.__settings["Max Number"]) for i in range(2)]
-            rule = [[[random.randint(0,1) for k in range(dim)] for j in range(dim)] for i in range(dim)]
+            fk_oil = [random.uniform(0,1) for i in range(2)]
+            fk_gas = [random.uniform(0,1) for i in range(2)]
+            fk_coal = [random.uniform(0,1) for i in range(2)]
+            fk_out = [random.uniform(0,1) for i in range(2)]
+            rule = [[[random.randint(0,3) for k in range(dim)] for j in range(dim)] for i in range(dim)]
 
             pop.append([sorted(fk_oil),sorted(fk_gas),sorted(fk_coal),sorted(fk_out),rule])
         return pop
