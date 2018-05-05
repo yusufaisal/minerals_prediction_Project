@@ -1,35 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb704fd4-3a9c-46f4-bf14-acdc0ea55ce4" name="Default" comment="Almost Final">
-      <change afterPath="$PROJECT_DIR$/JST Model/BUMI_model_By7.sav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JST Model/coal_consumption_model_By3.sav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JST Model/coal_consumption_model_By7.bac.sav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JST Model/coal_consumption_model_By7.sav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JST Model/gas_consumption_model_By5.sav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JST Model/gas_consumption_model_By7.sav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JST Model/oil_consumption_model_By5.sav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JST Model/oil_consumption_model_By7.sav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/method/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/method/fis_bac.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Data Energi Worldbank.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/HistoricalPopulationValues.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/HistoricalRealGDPValues.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/coal-consumption-mtoe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/coal-consumption-mtoe.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/coal-consumption-mtoe.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/coal-production-mtoe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/coal-production-mtoe.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/coal-production-mtoe.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/gas-consumption-tonnes.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/gas-production-tonnes.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/oil-consumption-tonnes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/oil-consumption-tonnes.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/oil-consumption-tonnes.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/oil-production-tonnes.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_FIS.py" beforeDir="false" afterPath="$PROJECT_DIR$/method/class_FIS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_GA.py" beforeDir="false" afterPath="$PROJECT_DIR$/method/class_GA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_JST.py" beforeDir="false" afterPath="$PROJECT_DIR$/method/class_JST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/main.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="cb704fd4-3a9c-46f4-bf14-acdc0ea55ce4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Dataset/RAW/Data Energi Worldbank.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dataset/RAW/HistoricalPopulationValues.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dataset/RAW/HistoricalRealGDPValues.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dataset/RAW/coal-consumption-mtoe.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dataset/RAW/coal-production-mtoe.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dataset/RAW/gas-consumption-tonnes.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dataset/RAW/gas-production-tonnes.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dataset/RAW/oil-consumption-tonnes.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dataset/RAW/oil-production-tonnes.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dataset/gas-production-tonnes.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dataset/oil-production-tonnes.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dataset/oil_class.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,11 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="class_FIS.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="class_FIS.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/method/class_FIS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+            <state relative-caret-position="241">
+              <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -104,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class_GA.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="class_GA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/method/class_GA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+            <state relative-caret-position="139">
+              <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -486,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524332172801</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Almost Final">
+      <created>1525552078011</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1525552078011</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -500,17 +492,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5060423" side_tool="true" weight="0.32784185" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50680786" side_tool="true" visible="true" weight="0.32561728" />
       <window_info anchor="right" x="0" y="0" width="295" height="584" id="Documentation" order="6" sideWeight="0.50576603" side_tool="true" weight="0.32223904" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.328" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32784185" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" weight="0.83179015" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4939577" weight="0.32686085" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988067" visible="true" weight="0.2526475" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.494705" weight="0.83179015" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49319214" visible="true" weight="0.32561728" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988067" visible="true" weight="0.2526475" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" sideWeight="0.49752882" weight="0.32854986" />
       <window_info anchor="right" id="SciView" order="4" sideWeight="0.49423394" weight="0.32618684" />
@@ -706,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/method/class_FIS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/method/fis_bac.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
@@ -722,11 +706,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/method/class_GA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        <state relative-caret-position="139">
+          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/method/class_FIS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
         </state>
       </provider>
     </entry>
