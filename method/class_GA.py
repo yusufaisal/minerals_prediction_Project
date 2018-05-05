@@ -1,14 +1,21 @@
 from __future__ import division
+from method.class_FIS import Fuzzy
 import random
 import numpy as np
-
+import pandas as pd
 
 class GeneticAlgorithm(object):
     __settings = {}
+    productions = []
+    consumptions = []
+    classification = []
 
     def __init__(self,**settings):
         for field in settings:
             self.__settings[field] = settings[field]
+        self.productions = np.loadtxt(self.__settings["Production file"],delimiter=',')
+        self.consumptions = np.loadtxt(self.__settings["Consumption file"],delimiter=',')
+        self.classification = pd.read_csv(self.__settings["Class file"],delimiter=',')
 
     def __mutation(self,c1,c2):
         if self.__settings["Mutation"]:
@@ -35,32 +42,43 @@ class GeneticAlgorithm(object):
 
     def __populations(self,nPop):
         pop = []
-        dim  = 2
+        dim  = 4
         for j in range(nPop):
-            fk_oil = [random.uniform(0,1) for i in range(2)]
-            fk_gas = [random.uniform(0,1) for i in range(2)]
-            fk_coal = [random.uniform(0,1) for i in range(2)]
-            fk_out = [random.uniform(0,1) for i in range(2)]
-            rule = [[[random.randint(0,3) for k in range(dim)] for j in range(dim)] for i in range(dim)]
+            fk_production = [random.randint(1,99) for i in range(6)]
+            fk_consumption = [random.randint(1,99) for i in range(6)]
+            fk_out = [random.uniform(0,1) for i in range(3)]
+            rule = [[random.randint(0,2) for j in range(dim)] for i in range(dim)]
 
-            pop.append([sorted(fk_oil),sorted(fk_gas),sorted(fk_coal),sorted(fk_out),rule])
+            pop.append([sorted(fk_production),sorted(fk_consumption),sorted(fk_out),rule])
         return pop
 
     def __crossover(self,c1,c2,rand):
         if self.__settings["Crossover"]:
             if rand >= self.__settings["Crossover Probability"]:
-                titik = random.randint(0,3)
+                titik = random.randint(0,2)
                 c1[titik],c2[titik] = c2[titik],c1[titik]
 
-                c1[4][0], c2[4][0] = c2[4][0], c1[4][0]
+                c1[3][0], c2[3][0] = c2[3][0], c1[3][0]
 
-    def __fitness(self,arr):
+    def fitness(self,arr):
+        count =0
+        fz = Fuzzy(arr)
 
-        return None
+        for i in range(len(self.productions)):
+            result = fz.run(self.productions[i][1],self.consumptions[i][1])
+            print(i,result , self.classification['Status'][i])
+            if  result == self.classification['Status'][i]:
+                count+=1
+        # print(len(self.classification['Status']))
+        accuracy = (count/len(self.classification['Status']))*100
+        if accuracy>80:
+            print(arr,accuracy)
+        return accuracy
 
     def run(self):
         populations = self.__populations(self.__settings["Populations"])
-        print(populations)
+
+        # print(populations)
         for _ in range(self.__settings["Generations"]):
             child = []
             fitness = []
@@ -78,14 +96,16 @@ class GeneticAlgorithm(object):
                 child.append(child1)
                 child.append(child2)
 
-                gab = populations + child
-                for j in range(len(gab)):
-                    fitness.append(self.__fitness(gab[j]))
+            gab = populations + child
+            for j in range(len(gab)):
+                fitness.append(self.fitness(gab[j]))
 
-                # print fitness
-                steadyState = sorted(range(len(fitness)), key=lambda k: fitness[k], reverse=True)
-                # print steadyState
+            steadyState = sorted(range(len(fitness)),key=lambda x: fitness[x], reverse=True)
+            print(steadyState)
 
-                pop = []
-                for j in range(self.__settings["Populations"]):
-                    pop.append(gab[steadyState[j]])
+            populations = []
+            for j in range(self.__settings["Populations"]):
+                print(gab[steadyState[j]])
+                populations.append(gab[steadyState[j]])
+            print("Parameter: ",gab[steadyState[0]])
+            print("accuracy: ",fitness[steadyState[0]])

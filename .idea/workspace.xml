@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb704fd4-3a9c-46f4-bf14-acdc0ea55ce4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/A.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/A.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cb704fd4-3a9c-46f4-bf14-acdc0ea55ce4" name="Default" comment="Almost Final">
+      <change afterPath="$PROJECT_DIR$/JST Model/BUMI_model_By7.sav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JST Model/coal_consumption_model_By3.sav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JST Model/coal_consumption_model_By7.bac.sav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JST Model/coal_consumption_model_By7.sav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JST Model/gas_consumption_model_By5.sav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JST Model/gas_consumption_model_By7.sav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JST Model/oil_consumption_model_By5.sav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JST Model/oil_consumption_model_By7.sav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/method/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/method/fis_bac.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JST Model/gas_consumption_model_By3.sav" beforeDir="false" afterPath="$PROJECT_DIR$/JST Model/gas_consumption_model_By3.sav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_GA.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_GA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_JST.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_JST.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Data Energi Worldbank.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/HistoricalPopulationValues.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/HistoricalRealGDPValues.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/coal-consumption-mtoe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/coal-consumption-mtoe.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/coal-consumption-mtoe.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/coal-production-mtoe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/coal-production-mtoe.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/coal-production-mtoe.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/gas-consumption-tonnes.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/gas-production-tonnes.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/oil-consumption-tonnes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/oil-consumption-tonnes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/oil-consumption-tonnes.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/oil-production-tonnes.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_FIS.py" beforeDir="false" afterPath="$PROJECT_DIR$/method/class_FIS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_GA.py" beforeDir="false" afterPath="$PROJECT_DIR$/method/class_GA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_JST.py" beforeDir="false" afterPath="$PROJECT_DIR$/method/class_JST.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/main.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -20,8 +39,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/A$A.coverage" NAME="A Coverage Results" MODIFIED="1524066779674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/A$main.coverage" NAME="main Coverage Results" MODIFIED="1524108720246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/A$A.coverage" NAME="A Coverage Results" MODIFIED="1525543588415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/A$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1525551693371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/A$main.coverage" NAME="main Coverage Results" MODIFIED="1525551630017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -43,22 +63,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="class_FIS.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/class_FIS.py">
+        <entry file="file://$PROJECT_DIR$/method/class_FIS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+            <state relative-caret-position="1292">
+              <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fis_bac.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/method/fis_bac.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-111">
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="class_GA.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/class_GA.py">
+        <entry file="file://$PROJECT_DIR$/method/class_GA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="258">
+              <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#163#238#0" />
               </folding>
             </state>
           </provider>
@@ -69,8 +121,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -101,13 +153,21 @@
         <option value="$PROJECT_DIR$/trash/run_ga.py" />
         <option value="$PROJECT_DIR$/Genetic Algorithm/class_GA.py" />
         <option value="$PROJECT_DIR$/JST/JST.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/class_FIS.py" />
         <option value="$PROJECT_DIR$/Dataset/BUMI.JK.csv" />
-        <option value="$PROJECT_DIR$/main.ipynb" />
         <option value="$PROJECT_DIR$/class_JST.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/class_GA.py" />
+        <option value="$PROJECT_DIR$/class_FIS.py" />
+        <option value="$PROJECT_DIR$/method/fis_bac.py" />
+        <option value="$PROJECT_DIR$/Dataset/coal-consumption-mtoe.csv" />
+        <option value="$PROJECT_DIR$/Dataset/coal-production-mtoe.csv" />
+        <option value="$PROJECT_DIR$/Dataset/oil-production-tonnes.csv" />
+        <option value="$PROJECT_DIR$/Dataset/oil-consumption-tonnes.csv" />
+        <option value="$PROJECT_DIR$/Dataset/oil_class.csv" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/main.ipynb" />
+        <option value="$PROJECT_DIR$/method/class_GA.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/method/class_FIS.py" />
       </list>
     </option>
   </component>
@@ -121,10 +181,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="82" />
-    <option name="y" value="69" />
-    <option name="width" value="1364" />
-    <option name="height" value="742" />
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -132,7 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,15 +204,25 @@
               <item name="A" type="462c0819:PsiDirectoryNode" />
               <item name="Dataset" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="A" type="b2602c69:ProjectViewProjectNode" />
+              <item name="A" type="462c0819:PsiDirectoryNode" />
+              <item name="method" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="A" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="A:/Programming/Python/Tugas Program 2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Semester 6/Sistem Terdistribusi" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -165,6 +234,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\Study\Telkom University\Project\A\method" />
       <recent name="A:\Study\Telkom University\Project\A" />
       <recent name="A:\Study\Telkom University\Project\A\Genetic Algorithm" />
       <recent name="A:\Study\Telkom University\Project\A\trash" />
@@ -182,7 +252,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.test (1)">
     <configuration name="A" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="A" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -213,7 +283,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="A:\Study\Telkom University\Project\A\class_JST.py" />
+      <option name="SCRIPT_NAME" value="A:\Study\Telkom University\Project\A\method\class_JST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -251,7 +321,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="A:\Study\Telkom University\Project\A\class_GA.py" />
+      <option name="SCRIPT_NAME" value="A:\Study\Telkom University\Project\A\method\class_GA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -369,8 +439,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.class_GA" />
         <item itemvalue="Python.JST" />
         <item itemvalue="Python.main (2)" />
@@ -409,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524043152166</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Almost Final">
+      <created>1524332172801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1524332172801</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -422,20 +499,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="16" width="1382" height="760" extended-state="6" />
+    <frame x="1358" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5060423" side_tool="true" weight="0.32784185" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32857144" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32784185" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" weight="0.3723229" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4939577" weight="0.32857144" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21148036" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="right" id="Database" order="3" sideWeight="0.49752882" visible="true" weight="0.32854986" />
+      <window_info anchor="right" x="0" y="0" width="295" height="584" id="Documentation" order="6" sideWeight="0.50576603" side_tool="true" weight="0.32223904" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.328" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32784185" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" weight="0.83179015" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4939577" weight="0.32686085" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988067" visible="true" weight="0.2526475" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.49752882" weight="0.32854986" />
       <window_info anchor="right" id="SciView" order="4" sideWeight="0.49423394" weight="0.32618684" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.50119334" side_tool="true" weight="0.24886535" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -443,38 +522,38 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Data View" order="5" />
-      <window_info anchor="right" x="0" y="0" width="291" height="542" id="Documentation" order="6" sideWeight="0.50576603" side_tool="true" weight="0.32175228" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3294893" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3294893" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32784185" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="8" weight="0.3294893" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.3294893" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49707174" visible="true" weight="0.3723229" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.111026034" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Data View" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32857144" />
-      <window_info anchor="right" id="Data View" order="3" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32857144" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4939577" weight="0.32857144" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5060423" side_tool="true" weight="0.32784185" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32857144" />
-      <window_info anchor="right" id="SciView" order="5" weight="0.32618684" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32857144" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3294893" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.3294893" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" weight="0.37216827" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24508321" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32784185" />
+      <window_info anchor="right" x="0" y="0" width="295" height="554" id="Documentation" order="6" sideWeight="0.50576603" side_tool="true" weight="0.3214826" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.49752882" weight="0.32854986" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4939577" weight="0.32686085" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.328" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5060423" side_tool="true" weight="0.32784185" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49423394" weight="0.32618684" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3294893" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.3294893" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32784185" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,10 +573,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plot_pareto_t2_t2_iter_90.png" />
-    <entry file="file://$PROJECT_DIR$/plot_pareto_t1_t1_iter_0.png" />
-    <entry file="file://$PROJECT_DIR$/plot_pareto_t2_t2_iter_10.png" />
-    <entry file="file://$PROJECT_DIR$/plot_pareto_t2_t2_iter_20.png" />
+    <entry file="file://$PROJECT_DIR$/method/class_GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plot_pareto_t1_t2_iter_50.png" />
     <entry file="file://$PROJECT_DIR$/plot_pareto_t1_t1_iter_20.png" />
     <entry file="file://$PROJECT_DIR$/plot_pareto_t1_t1_iter_80.png" />
@@ -523,13 +608,6 @@
     <entry file="file://$PROJECT_DIR$/trash/module_ga.py" />
     <entry file="file://$PROJECT_DIR$/JST/test.py" />
     <entry file="file://$PROJECT_DIR$/JST/finalized_model.sav" />
-    <entry file="file://$PROJECT_DIR$/Dataset/coal-production-mtoe.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JST Model/coal_consumption_model_By5.sav">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -537,15 +615,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/Dataset/BUMI.JK.csv" />
-    <entry file="file://$PROJECT_DIR$/main.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dataset/gas-consumption-tonnes.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -553,108 +623,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dataset/coal-consumption-mtoe.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class_JST.py">
+    <entry file="file://$PROJECT_DIR$/method/class_JST.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/class_FIS.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.745/Uas log/apache2/www-error.log" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.101/Uas log/daemon.log" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.456/Uas log/user.log" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.956/Uas log/fsck/checkroot" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.854/Uas log/apt/term.log" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.195/Uas log/messages" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.064/Uas log/fsck/checkfs" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.432/Uas log/debug" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.302/Uas log/apache2/www-access.log" />
+    <entry file="file://$PROJECT_DIR$/Dataset/coal-production-mtoe.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        <state relative-caret-position="292">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.745/Uas log/apache2/www-error.log">
+    <entry file="file://$PROJECT_DIR$/Dataset/coal-consumption-mtoe.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="100" selection-start-line="1" selection-start-column="100" selection-end-line="1" selection-end-column="100" />
+        <state relative-caret-position="292">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.039/Uas log/apache2/www-media.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.101/Uas log/daemon.log">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/numpy/lib/npyio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19266">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="49" />
+        <state relative-caret-position="131">
+          <caret line="737" selection-start-line="737" selection-end-line="737" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.456/Uas log/user.log">
+    <entry file="file://$PROJECT_DIR$/Dataset/oil-consumption-tonnes.csv">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-456" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/1778608523/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="3601" column="8" selection-start-line="3601" selection-start-column="8" selection-end-line="3601" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dataset/oil_class.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <caret column="70" selection-end-column="3" />
+          <selected id="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.956/Uas log/fsck/checkroot">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="3" />
+        <state relative-caret-position="153">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.854/Uas log/apt/term.log">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="515" column="38" selection-start-line="515" selection-start-column="38" selection-end-line="515" selection-end-column="38" />
+        <state relative-caret-position="-111">
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.195/Uas log/messages">
+    <entry file="file://$PROJECT_DIR$/method/class_FIS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14756" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.064/Uas log/fsck/checkfs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="3" />
+        <state relative-caret-position="1292">
+          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.379/Uas log/auth.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.432/Uas log/debug">
+    <entry file="file://$PROJECT_DIR$/method/fis_bac.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="86" column="63" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+        <state relative-caret-position="1003">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.302/Uas log/apache2/www-access.log">
+    <entry file="file://$PROJECT_DIR$/method/class_GA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="90" column="14" selection-start-line="90" selection-end-line="90" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class_GA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="258">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#163#238#0" />
           </folding>
         </state>
       </provider>

@@ -1,16 +1,17 @@
-from class_GA import GeneticAlgorithm
-from class_JST import JST
-from class_FIS import Fuzzy
+from method.class_JST import JST
+from method.class_GA import GeneticAlgorithm
 
 #### GA Setting ####
 GAsettings = {
-    "Populations"   : 8,
-    "Generations"   : 12,
-    "Max Number"    : 99,
+    "Populations"   : 200,
+    "Generations"   : 1,
     "Crossover"     : True,
-    "Mutation"      : True,
+    "Mutation"      : False,
     "Crossover Probability" : 0.6,
-    "Mutation Probability"  : 0.8
+    "Mutation Probability"  : 0.8,
+    "Production file"   : "Dataset/oil-production-tonnes.csv",
+    "Consumption file"  : "Dataset/oil-consumption-tonnes.csv",
+    "Class file"    : "Dataset/oil_class.csv",
     # "Kromosom"      : 12,
     # "Replacement Strategy"  : "Steadystate"  # steadystate or elitism
 }
@@ -27,11 +28,9 @@ JSTSettings = {
 }
 
 if __name__=="__main__":
-    jst = JST(**JSTSettings)
-    jst.run()
+    # jst = JST(**JSTSettings)
+    # jst.run()
 
-    # ga = GeneticAlgorithm(**GAsettings)
-    # ga.run()
-
-    # FIZ = Fuzzy([[8, 33], [8, 28], [35, 55], [5, 52], [[[0, 0], [1, 0]], [[0, 1], [1, 0]]]])
-    # FIZ.run(11,20,20)
+    ga = GeneticAlgorithm(**GAsettings)
+    # print(ga.fitness([[2, 63, 63, 73, 90, 94], [7, 11, 39, 63, 84, 88], [0.2364993194401892, 0.3628417958341108, 0.8852613625610533], [[0, 1, 2, 0], [2, 2, 2, 2], [2, 1, 2, 2], [1, 1, 1, 2]]]))
+    ga.run()

@@ -32,12 +32,25 @@ class Fuzzy:
         self.__fk_coal = self.__getResult(coal, self.setting["fk_coal"])
 
     def __inference(self):
+        tempResult = []
         for idx_oil in range(len(self.__fk_oil)):
             for idx_gas in range(len(self.__fk_gas)):
                 for idx_coal in range(len(self.__fk_coal)):
                     self.__resultInference.append([self.setting["rule"][self.__fk_oil[idx_oil][0]][self.__fk_gas[idx_gas][0]][self.__fk_coal[idx_coal][0]],
                                                    min([self.__fk_oil[idx_oil][1],self.__fk_gas[idx_gas][1],self.__fk_coal[idx_coal][1]])])
         print(self.__resultInference)
+
+        tempResult.append(self.__resultInference[0])
+        k=0
+        for i in range(len(self.__resultInference)):
+            if tempResult[k][0] == self.__resultInference[i][0]:
+                if tempResult[k][1] < self.__resultInference[i][1]:
+                    tempResult[k][1] = self.__resultInference[i][1]
+            else:
+                k+=1
+                tempResult.append(self.__resultInference[i])
+        self.__resultInference = tempResult
+
 
     def __defuzzification(self):
         return None
