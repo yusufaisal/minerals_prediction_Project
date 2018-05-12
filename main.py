@@ -2,17 +2,18 @@ from method.class_JST import JST
 from method.class_GA import GeneticAlgorithm
 
 #### GA Setting ####
+uhuy = "oil"
 GAsettings = {
-    "Populations"   : 400,
-    "Generations"   : 50,
+    "Data"          : uhuy,
+    "Populations"   : 300,
+    "Generations"   : 10,
     "Crossover"     : True,
     "Mutation"      : False,
     "Crossover Probability" : 0.6,
     "Mutation Probability"  : 0.8,
-    "Production file"   : "Dataset/oil-production-tonnes.csv",
-    "Consumption file"  : "Dataset/oil-consumption-tonnes.csv",
-    "Class file"    : "Dataset/oil_class.csv",
-    # "Kromosom"      : 12,
+    "Production file"   : "Dataset/"+uhuy+"-production.csv",
+    "Consumption file"  : "Dataset/"+uhuy+"-consumption.csv",
+    "Class file"        : "Dataset/"+uhuy+"_class.csv",
     # "Replacement Strategy"  : "Steadystate"  # steadystate or elitism
 }
 

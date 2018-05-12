@@ -63,35 +63,43 @@ class GeneticAlgorithm(object):
 
     def __fitness(self,arr):
         count =0
-        fz = Fuzzy(arr)
-
+        result = []
         for i in range(len(self.productions)):
-            result = fz.run(self.productions[i][1],self.consumptions[i][1])
-            if  result == self.classification['Status'][i]:
+            fz = Fuzzy(arr)
+            result.append(fz.run(self.productions[i][1],self.consumptions[i][1]))
+            if  result[i][1] == self.classification['Aktual'][i]:
                 count+=1
-        accuracy = (count/len(self.classification['Status']))*100
+            del fz
+
+        accuracy = (count/len(self.classification['Aktual']))*100
         # if accuracy>80:
         #     print(arr,accuracy)
-        del fz
+
         return accuracy
 
     def test(self,param):
         count =0
         fz = Fuzzy(param)
+        result = []
         # pprint(fz.setting)
 
         for i in range(len(self.productions)):
-            result = fz.run(self.productions[i][1],self.consumptions[i][1])
-            # print(i, self.productions[i][1], self.consumptions[i][1], result)
-            if (result == self.classification['Status'][i]):
+            result.append(fz.run(self.productions[i][1],self.consumptions[i][1]))
+            if (result[i][1] == self.classification['Aktual'][i]):
                 count+=1
-        accuracy = (count/len(self.classification['Status']))*100
+
+        result = np.array(result)
+        df = self.classification.assign(Predict=result[:,1],CrispOut=result[:,0])
+        accuracy = (count/len(self.classification['Aktual']))*100
         del fz
+
+        df.to_csv("Dataset/"+self.__settings["Data"]+"_result_"+str(accuracy)+".csv",index=False)
+        # print(df)
         return accuracy
 
     def run(self):
         populations = self.__populations(self.__settings["Populations"])
-
+        populations.append([[9, 20, 41, 66, 82, 94], [41, 43, 72, 78, 87, 93], [0.21667536156936074, 0.27684040127537657, 0.6390034729226843], [[1, 1, 0, 1], [1, 2, 0, 0], [0, 1, 2, 1], [1, 0, 2, 2]]])
         # print(populations)
         for _ in range(self.__settings["Generations"]):
             child = []
@@ -120,4 +128,4 @@ class GeneticAlgorithm(object):
             for j in range(self.__settings["Populations"]):
                 populations.append(gab[steadyState[j]])
             print("Parameter: ",gab[steadyState[0]])
-            print("accuracy: ",fitness[steadyState[0]])
+            print("Accuracy: ",fitness[steadyState[0]])

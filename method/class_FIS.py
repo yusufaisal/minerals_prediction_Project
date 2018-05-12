@@ -52,6 +52,7 @@ class Fuzzy:
 
     def __inference(self):
         tempResult = []
+        self.__resultInference = []
         k = 0
 
         for idx_production in range(len(self.__fk_production)):
@@ -85,7 +86,13 @@ class Fuzzy:
         self.__fuzzification(production,consumption)
         self.__inference()
         result = self.__defuzzification(self.__resultInference)
+        # if i==1:
+        #     print(consumption,production)
+        #     print(self.__fk_consumption,self.__fk_production)
+        #     pprint(self.__resultInference)
+        #     print(result)
+        del self.__resultInference
         if result <= 0.5:
-            return "Aman"
+            return [result,"Aman"]
         else:
-            return "Krisis"
+            return [result,"Krisis"]

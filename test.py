@@ -2,16 +2,18 @@ from method.class_JST import JST
 from method.class_GA import GeneticAlgorithm
 
 #### GA Setting ####
+uhuy = "oil"
 GAsettings = {
-    "Populations"   : 200,
-    "Generations"   : 1,
+    "Data"          : uhuy,
+    "Populations"   : 6000,
+    "Generations"   : 10,
     "Crossover"     : True,
     "Mutation"      : False,
     "Crossover Probability" : 0.6,
     "Mutation Probability"  : 0.8,
-    "Production file"   : "Dataset/oil-production-tonnes.csv",
-    "Consumption file"  : "Dataset/oil-consumption-tonnes.csv",
-    "Class file"    : "Dataset/oil_class.csv",
+    "Production file"   : "Dataset/"+uhuy+"-production.csv",
+    "Consumption file"  : "Dataset/"+uhuy+"-consumption.csv",
+    "Class file"        : "Dataset/"+uhuy+"_class.csv",
     # "Kromosom"      : 12,
     # "Replacement Strategy"  : "Steadystate"  # steadystate or elitism
 }
@@ -30,17 +32,17 @@ JSTSettings = {
 if __name__=="__main__":
     # jst = JST(**JSTSettings)
     # jst.run()
-    for i in range(5):
-        ga = GeneticAlgorithm(**GAsettings)
+    # for i in range(5):
+    ga = GeneticAlgorithm(**GAsettings)
 
-        param = [[22, 27, 39, 39, 59, 62], [11, 44, 57, 62, 72, 90],
-                 [0.3468746509230485, 0.3685844563743308, 0.7699144850522315],
-                 [[2, 1, 2, 0], [1, 2, 1, 0], [1, 2, 2, 1], [0, 0, 2, 2]]]
-        print("\nAccuracy:", ga.test(param))
+    if uhuy=="coal":
+        # coal
+        param = [[37, 42, 53, 62, 76, 97], [5, 16, 36, 80, 81, 92], [0.22041392035373764, 0.2727645531271008, 0.4730778821782369], [[0, 1, 2, 1], [2, 2, 1, 2], [0, 1, 0, 2], [1, 1, 0, 2]]]
+    elif uhuy=="gas":
+        # gas
+        param = [[12, 22, 27, 64, 70, 90], [12, 21, 30, 36, 59, 84], [0.01961226236542557, 0.0265507352917832, 0.3958541452293558], [[0, 0, 0, 1], [2, 2, 2, 2], [2, 2, 2, 1], [1, 1, 1, 0]]]
+    elif uhuy=="oil":
+        # oil
+        param = [[7, 8, 26, 74, 78, 92], [4, 40, 61, 62, 74, 76], [0.17733381252824376, 0.3162646281869512, 0.8231895034572642], [[0, 1, 0, 1], [0, 2, 2, 0], [1, 1, 0, 0], [2, 0, 1, 2]]]
 
-        param = [[1, 5, 14, 51, 72, 73], [34, 41, 45, 58, 97, 98],
-                 [0.22341237600782782, 0.45571745504685135, 0.973699768208969],
-                 [[2, 0, 0, 0], [1, 0, 1, 1], [0, 0, 2, 0], [1, 0, 0, 1]]]
-        # param = [[11, 31, 46, 51, 67, 88], [2, 5, 30, 44, 66, 69], [0.404794601951741, 0.4574010441256189, 0.6502489101902879], [[1, 0, 1, 2], [2, 0, 2, 1], [1, 2, 2, 2], [1, 0, 1, 1]]]
-
-        print("\nAccuracy:", ga.test(param))
+    print("Accuracy:", ga.test(param))
