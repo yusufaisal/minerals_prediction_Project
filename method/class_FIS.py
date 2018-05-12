@@ -1,3 +1,4 @@
+from pprint import pprint
 class Fuzzy:
     setting = {}
     __fk_production = []
@@ -12,10 +13,17 @@ class Fuzzy:
             "fk_out"    : data[2],
             "rule"      : data[3]
         }
+    def __delete__(self, instance):
+        print("deleted")
+        del self.__fk_coal
+        del self.__fk_consumption
+        del self.__fk_production
+        del self.__resultInference
+        del self.setting
 
     def __getResult(self,x,range):
         # ex. data -> [0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
-        # return [[class,value]]
+        # return [[label,value]]
         # print(x)
         if (x<=range[0]) :
             return [[0,1]]
@@ -38,7 +46,6 @@ class Fuzzy:
         elif (x>=range[5]):
             return [[3, 1]]
 
-
     def __fuzzification(self,production,consumption):
         self.__fk_production = self.__getResult(production, self.setting["fk_production"])
         self.__fk_consumption = self.__getResult(consumption, self.setting["fk_consumption"])
@@ -54,6 +61,7 @@ class Fuzzy:
                     self.__resultInference.append([self.setting["rule"][x0][y0],
                                                    min([self.__fk_production[idx_production][1],
                                                         self.__fk_consumption[idx_consumption][1]])])
+        self.__resultInference.sort()
         tempResult.append(self.__resultInference[0])
         for i in range(len(self.__resultInference)):
             if tempResult[k][0] == self.__resultInference[i][0]:

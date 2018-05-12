@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb704fd4-3a9c-46f4-bf14-acdc0ea55ce4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Dataset/RAW/Data Energi Worldbank.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/RAW/HistoricalPopulationValues.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/RAW/HistoricalRealGDPValues.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/RAW/coal-consumption-mtoe.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/RAW/coal-production-mtoe.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/RAW/gas-consumption-tonnes.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/RAW/gas-production-tonnes.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/RAW/oil-consumption-tonnes.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/RAW/oil-production-tonnes.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/gas-production-tonnes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/oil-production-tonnes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/oil_class.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/method/class_FIS.py" beforeDir="false" afterPath="$PROJECT_DIR$/method/class_FIS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/method/class_GA.py" beforeDir="false" afterPath="$PROJECT_DIR$/method/class_GA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +17,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/A$A.coverage" NAME="A Coverage Results" MODIFIED="1525543588415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/A$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1525551693371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/A$main.coverage" NAME="main Coverage Results" MODIFIED="1525551630017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/A$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1526098051692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/A$main.coverage" NAME="main Coverage Results" MODIFIED="1526097899130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -47,20 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="class_FIS.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="class_FIS.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/method/class_FIS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fis_bac.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/method/fis_bac.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+            <state relative-caret-position="53">
+              <caret line="68" column="67" lean-forward="true" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -68,8 +51,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-111">
-              <caret lean-forward="true" />
+            <state relative-caret-position="-202">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -80,8 +63,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="243">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -89,13 +72,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class_GA.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="class_GA.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/method/class_GA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+            <state relative-caret-position="332">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#34#68#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,12 +96,13 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>print</find>
       <find>193.109.122.15</find>
       <find>193.109.122.52</find>
       <find>123.4.51.181</find>
       <find>221.192.199.35</find>
       <find>221.194.47.162</find>
+      <find>print</find>
+      <find>ppri</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,11 +132,11 @@
         <option value="$PROJECT_DIR$/Dataset/oil-production-tonnes.csv" />
         <option value="$PROJECT_DIR$/Dataset/oil-consumption-tonnes.csv" />
         <option value="$PROJECT_DIR$/Dataset/oil_class.csv" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/main.ipynb" />
-        <option value="$PROJECT_DIR$/method/class_GA.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/method/class_FIS.py" />
+        <option value="$PROJECT_DIR$/method/class_GA.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -166,44 +150,17 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="683" />
+    <option name="y" value="30" />
+    <option name="width" value="683" />
+    <option name="height" value="738" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="A" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A" type="462c0819:PsiDirectoryNode" />
-              <item name="Dataset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A" type="b2602c69:ProjectViewProjectNode" />
-              <item name="A" type="462c0819:PsiDirectoryNode" />
-              <item name="method" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="A" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -478,7 +435,21 @@
       <option name="project" value="LOCAL" />
       <updated>1525552078011</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Almost Final">
+      <created>1525552138363</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1525552138363</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Almost Final">
+      <created>1525552181361</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1525552181361</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -491,23 +462,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50680786" side_tool="true" visible="true" weight="0.32561728" />
-      <window_info anchor="right" x="0" y="0" width="295" height="584" id="Documentation" order="6" sideWeight="0.50576603" side_tool="true" weight="0.32223904" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5060514" side_tool="true" weight="0.83179015" />
+      <window_info anchor="right" x="0" y="0" width="295" height="554" id="Documentation" order="6" sideWeight="0.50576603" side_tool="true" weight="0.32223904" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.328" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49924356" weight="0.3271605" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32784185" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.494705" weight="0.83179015" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49319214" visible="true" weight="0.32561728" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988067" visible="true" weight="0.2526475" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49394855" visible="true" weight="0.31391585" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49319214" weight="0.32524273" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988067" weight="0.26399395" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" sideWeight="0.49752882" weight="0.32854986" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49423394" weight="0.32618684" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49423394" weight="0.3260212" />
       <window_info id="Structure" order="1" sideWeight="0.50119334" side_tool="true" weight="0.24886535" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39967638" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -520,30 +492,30 @@
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.3294893" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988067" visible="true" weight="0.26399395" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49394855" visible="true" weight="0.42556635" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Data View" order="5" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.50119334" side_tool="true" weight="0.24886535" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" weight="0.37216827" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24508321" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32784185" />
-      <window_info anchor="right" x="0" y="0" width="295" height="554" id="Documentation" order="6" sideWeight="0.50576603" side_tool="true" weight="0.3214826" />
-      <window_info anchor="right" id="Database" order="3" sideWeight="0.49752882" weight="0.32854986" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4939577" weight="0.32686085" />
+      <window_info anchor="right" x="0" y="0" width="295" height="554" id="Documentation" order="6" sideWeight="0.50576603" side_tool="true" weight="0.32223904" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.328" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5060423" side_tool="true" weight="0.32784185" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49423394" weight="0.32618684" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3294893" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49319214" weight="0.32561728" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5060514" side_tool="true" weight="0.83179015" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49924356" weight="0.3271605" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49423394" weight="0.32618684" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.3294893" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.49752882" weight="0.32854986" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32784185" />
     </layout-to-restore>
   </component>
@@ -560,7 +532,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -569,7 +548,7 @@
         <state relative-caret-position="1139">
           <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#34#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -677,26 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/method/fis_bac.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
@@ -704,20 +663,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/method/class_GA.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+        <state relative-caret-position="-202">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/method/class_FIS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+        <state relative-caret-position="53">
+          <caret line="68" column="67" lean-forward="true" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/method/class_GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <element signature="e#34#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

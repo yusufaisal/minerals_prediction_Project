@@ -3,8 +3,8 @@ from method.class_GA import GeneticAlgorithm
 
 #### GA Setting ####
 GAsettings = {
-    "Populations"   : 200,
-    "Generations"   : 1,
+    "Populations"   : 400,
+    "Generations"   : 50,
     "Crossover"     : True,
     "Mutation"      : False,
     "Crossover Probability" : 0.6,
@@ -32,5 +32,4 @@ if __name__=="__main__":
     # jst.run()
 
     ga = GeneticAlgorithm(**GAsettings)
-    # print(ga.fitness([[2, 63, 63, 73, 90, 94], [7, 11, 39, 63, 84, 88], [0.2364993194401892, 0.3628417958341108, 0.8852613625610533], [[0, 1, 2, 0], [2, 2, 2, 2], [2, 1, 2, 2], [1, 1, 1, 2]]]))
     ga.run()

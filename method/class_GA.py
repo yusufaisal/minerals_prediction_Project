@@ -1,5 +1,6 @@
-from __future__ import division
+# from __future__ import division
 from method.class_FIS import Fuzzy
+from pprint import pprint
 import random
 import numpy as np
 import pandas as pd
@@ -60,19 +61,32 @@ class GeneticAlgorithm(object):
 
                 c1[3][0], c2[3][0] = c2[3][0], c1[3][0]
 
-    def fitness(self,arr):
+    def __fitness(self,arr):
         count =0
         fz = Fuzzy(arr)
 
         for i in range(len(self.productions)):
             result = fz.run(self.productions[i][1],self.consumptions[i][1])
-            print(i,result , self.classification['Status'][i])
             if  result == self.classification['Status'][i]:
                 count+=1
-        # print(len(self.classification['Status']))
         accuracy = (count/len(self.classification['Status']))*100
-        if accuracy>80:
-            print(arr,accuracy)
+        # if accuracy>80:
+        #     print(arr,accuracy)
+        del fz
+        return accuracy
+
+    def test(self,param):
+        count =0
+        fz = Fuzzy(param)
+        # pprint(fz.setting)
+
+        for i in range(len(self.productions)):
+            result = fz.run(self.productions[i][1],self.consumptions[i][1])
+            # print(i, self.productions[i][1], self.consumptions[i][1], result)
+            if (result == self.classification['Status'][i]):
+                count+=1
+        accuracy = (count/len(self.classification['Status']))*100
+        del fz
         return accuracy
 
     def run(self):
@@ -86,26 +100,24 @@ class GeneticAlgorithm(object):
             for i in range(int(self.__settings["Populations"]/2)):
                 parent1 = random.randint(0, self.__settings["Populations"] - 1)
                 parent2 = random.randint(0, self.__settings["Populations"] - 1)
-
                 child1 = populations[parent1][:]
                 child2 = populations[parent2][:]
-
                 self.__crossover(child1,child2,random.uniform(0,1))
                 self.__mutation(child1, child2)
-
                 child.append(child1)
                 child.append(child2)
 
             gab = populations + child
             for j in range(len(gab)):
-                fitness.append(self.fitness(gab[j]))
+                fitness.append(self.__fitness(gab[j]))
 
             steadyState = sorted(range(len(fitness)),key=lambda x: fitness[x], reverse=True)
-            print(steadyState)
+            # for i in range(len(steadyState)):
+            #     print(gab[steadyState[i]],fitness[steadyState[i]])
+            # print(steadyState)
 
             populations = []
             for j in range(self.__settings["Populations"]):
-                print(gab[steadyState[j]])
                 populations.append(gab[steadyState[j]])
             print("Parameter: ",gab[steadyState[0]])
             print("accuracy: ",fitness[steadyState[0]])
