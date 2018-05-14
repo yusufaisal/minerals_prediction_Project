@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn.neural_network import MLPRegressor
 import matplotlib.pyplot as plt
+import random as rand
 import pickle
 
 class JST:
@@ -45,7 +46,7 @@ class JST:
         if self.__settings["Load Model"]:
             clf = self.__loadModel()
         else:
-            clf = MLPRegressor(activation="identity", solver='sgd', alpha=0.0001, hidden_layer_sizes=(99, 1),
+            clf = MLPRegressor(activation="identity", solver='sgd', alpha=0.0001, hidden_layer_sizes=(99, 10),
                                verbose=self.__settings["Learning Verbose"],
                                batch_size="auto", max_iter=100, learning_rate='adaptive', learning_rate_init=0.0000001,
                                warm_start=True)
@@ -84,6 +85,9 @@ class JST:
         result = sum/len(y_predict)*100
         return result
 
+    def predict(self,clf):
+        None
+
     def run(self):
         self.__data = self.__loadDataset()
         x_train = self.__data[:, 0]
@@ -101,8 +105,21 @@ class JST:
         print("Loss :",clf.loss_)
 
         y_predict = np.array(clf.predict(self.__x))
-
         print("MAPE :",self.__MAPE(y_train,y_predict))
 
+        x_test = []
+        i = 2013
+        while i <= (2023):
+            x_test
+            self.__x.append([float(data[i, 1]), float(data[i + 1, 1]), float(data[i + 2, 1]), float(data[i + 3, 1]),
+                      float(data[i + 4, 1]),float(data[i + 5, 1]),float(data[i + 6, 1])])
+            self.__y.append(float(data[i + 7, 1]))
+            i += 1
+        # arr = [[rand.randint(20,55) for i in range(7)] for _ in range(1)]
+        arr = self.__x
+        print(arr)
+
+        # print(arr[0])
+        print(clf.predict(arr))
         self.__saveModel(clf)
         self.__showPlot(x_train,y_train,y_predict)

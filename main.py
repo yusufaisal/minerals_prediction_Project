@@ -19,18 +19,19 @@ GAsettings = {
 
 #### JST Setting ####
 JSTSettings = {
-    "Dataset Path"      : "Dataset/coal-consumption-mtoe.csv",
+    "Dataset Path"      : "Dataset/coal-consumption.csv",
     "Model Filename"    : "JST Model/coal_consumption_model_By7.sav",
     "Load Model"        : False,
     "Save Model"        : False,
     "Learning Verbose"  : True,
     "Predict By"        : 7,  #7, 5, or 3(default)
-    "Show Plot"         : True
+    "Show Plot"         : False
 }
 
 if __name__=="__main__":
-    # jst = JST(**JSTSettings)
-    # jst.run()
+    jst = JST(**JSTSettings)
+    jst.run()
+    # jst.predict()
 
-    ga = GeneticAlgorithm(**GAsettings)
-    ga.run()
+    # ga = GeneticAlgorithm(**GAsettings)
+    # ga.run()
