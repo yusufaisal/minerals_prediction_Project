@@ -5,6 +5,7 @@ import random as rand
 import pickle
 
 class JST:
+    __clf = None
     __data = []
     __x = []
     __y = []
@@ -13,6 +14,10 @@ class JST:
     def __init__(self,**settings):
         for key in settings:
             self.__settings[key] = settings[key]
+        self.__clf = None
+        self.__data = []
+        self.__x = []
+        self.__y = []
 
     def __loadDataset(self):
         data = np.genfromtxt(self.__settings["Dataset Path"], delimiter=',')
@@ -78,6 +83,7 @@ class JST:
 
     def __MAPE(self,y_train,y_predict):
         sum = 0
+        print(len(y_predict))
         for i in range(len(y_predict)):
             x = y_train[i+self.__settings["Predict By"]] - y_predict[i]
             sum += (self.positif(x))/y_train[i+self.__settings["Predict By"]]
@@ -85,8 +91,38 @@ class JST:
         result = sum/len(y_predict)*100
         return result
 
-    def predict(self,clf):
-        None
+    def predict(self,End):
+        data = self.__data
+        x_test = []
+        values = []
+        years = []
+        i = len(data)-(self.__settings["Predict By"]+1)
+        n = 2012
+        while n < (End):
+            if x_test == []:
+                x_test.append([[float(data[i][1]),
+                                float(data[i + 1][1]),
+                                float(data[i + 2][1]),
+                                float(data[i + 3][1]),
+                                float(data[i + 4][1]),
+                                float(data[i + 5][1]),
+                                float(data[i + 6][1])]])
+                i += 1
+            else:
+                x_test.append([[x_test[len(x_test) - 1][0][1],
+                                x_test[len(x_test) - 1][0][2],
+                                x_test[len(x_test) - 1][0][3],
+                                x_test[len(x_test) - 1][0][4],
+                                x_test[len(x_test) - 1][0][5],
+                                x_test[len(x_test) - 1][0][6],
+                                y_test[0]]])
+            n += 1
+            years.append(n)
+            qwerty = x_test[len(x_test) - 1]
+            y_test = self.__clf.predict(qwerty)
+            values.append(y_test[0])
+
+        return years,values
 
     def run(self):
         self.__data = self.__loadDataset()
@@ -101,25 +137,12 @@ class JST:
         else:
             self.__predictBy3(self.__data)
 
-        clf = self.__train()
-        print("Loss :",clf.loss_)
+        self.__clf = self.__train()
+        print("Loss :",self.__clf.loss_)
 
-        y_predict = np.array(clf.predict(self.__x))
+        y_predict = np.array(self.__clf.predict(self.__x))
         print("MAPE :",self.__MAPE(y_train,y_predict))
 
-        x_test = []
-        i = 2013
-        while i <= (2023):
-            x_test
-            self.__x.append([float(data[i, 1]), float(data[i + 1, 1]), float(data[i + 2, 1]), float(data[i + 3, 1]),
-                      float(data[i + 4, 1]),float(data[i + 5, 1]),float(data[i + 6, 1])])
-            self.__y.append(float(data[i + 7, 1]))
-            i += 1
-        # arr = [[rand.randint(20,55) for i in range(7)] for _ in range(1)]
-        arr = self.__x
-        print(arr)
-
-        # print(arr[0])
-        print(clf.predict(arr))
-        self.__saveModel(clf)
+        print()
+        self.__saveModel(self.__clf)
         self.__showPlot(x_train,y_train,y_predict)

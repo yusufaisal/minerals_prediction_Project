@@ -82,11 +82,11 @@ class Fuzzy:
         result = A/B
         return result
 
-    def run(self,production,consumption):
+    def run(self,production,consumption,i):
         self.__fuzzification(production,consumption)
         self.__inference()
         result = self.__defuzzification(self.__resultInference)
-        # if i==1:
+        # if i==8:
         #     print(consumption,production)
         #     print(self.__fk_consumption,self.__fk_production)
         #     pprint(self.__resultInference)

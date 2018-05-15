@@ -84,17 +84,19 @@ class GeneticAlgorithm(object):
         # pprint(fz.setting)
 
         for i in range(len(self.productions)):
-            result.append(fz.run(self.productions[i][1],self.consumptions[i][1]))
+            result.append(fz.run(self.productions[i][1],self.consumptions[i][1],i))
             if (result[i][1] == self.classification['Aktual'][i]):
                 count+=1
 
         result = np.array(result)
         df = self.classification.assign(Predict=result[:,1],CrispOut=result[:,0])
+        df['Production'] = self.productions[:,1]
+        df['Consumption'] = self.consumptions[:,1]
         accuracy = (count/len(self.classification['Aktual']))*100
         del fz
 
         df.to_csv("Dataset/"+self.__settings["Data"]+"_result_"+str(accuracy)+".csv",index=False)
-        # print(df)
+        print(df)
         return accuracy
 
     def run(self):
