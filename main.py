@@ -3,7 +3,7 @@ from method.class_GA import GeneticAlgorithm
 from method.class_FIS import Fuzzy
 import pandas as pd
 
-uhuy = "coal"
+uhuy = "oil"
 
 #### GA Setting ####
 GAsettings = {
